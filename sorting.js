@@ -49,27 +49,27 @@ function merge(arr1,arr2){
 	return returnArr;
 }
 
-for(var i=12; i <= 17; i++) {
-    var num_items = Math.pow(2,i);
-    var native_test_array = [];
-    var b_test_array = [];
-    var m_test_array = []
-    for(var j=0; j < num_items; j++) {
-        var rand = Math.floor(Math.random() * num_items);
-        native_test_array.push(rand);
-        b_test_array.push(rand);
-        m_test_array.push(rand);
-    }
+// for(var i=12; i <= 17; i++) {
+//     var num_items = Math.pow(2,i);
+//     var native_test_array = [];
+//     var b_test_array = [];
+//     var m_test_array = []
+//     for(var j=0; j < num_items; j++) {
+//         var rand = Math.floor(Math.random() * num_items);
+//         native_test_array.push(rand);
+//         b_test_array.push(rand);
+//         m_test_array.push(rand);
+//     }
 
-    console.time(num_items + " native");
-    native_test_array.sort(function(a,b){ return a-b; });
-    console.timeEnd(num_items + " native");
+//     console.time(num_items + " native");
+//     native_test_array.sort(function(a,b){ return a-b; });
+//     console.timeEnd(num_items + " native");
 
-    console.time(num_items + " bubble");
-    bubbleSort(b_test_array);
-    console.timeEnd(num_items + " bubble");
+//     console.time(num_items + " bubble");
+//     bubbleSort(b_test_array);
+//     console.timeEnd(num_items + " bubble");
 
-    console.time(num_items + " merge");
-    mergeSort(m_test_array);
-    console.timeEnd(num_items + " merge");  
-}
+//     console.time(num_items + " merge");
+//     mergeSort(m_test_array);
+//     console.timeEnd(num_items + " merge");  
+// }

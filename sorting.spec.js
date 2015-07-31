@@ -53,7 +53,7 @@ describe('Merge function', function() {
   });
 
   it('is able to merge two bigger and not equal size arrays', function() {
-    expect(merge([3,5,7],[-1,1,2,8])).toEqual([1,2,3,5,7,8]);
+    expect(merge([3,5,7],[-1,1,2,8])).toEqual([-1,1,2,3,5,7,8]);
   });
 
 });
